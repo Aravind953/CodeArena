@@ -1,0 +1,18 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+.venv/
+venv/

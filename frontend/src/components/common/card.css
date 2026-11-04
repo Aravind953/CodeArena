@@ -1,0 +1,23 @@
+
+.ca-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.ca-card--default {
+  padding: 24px;
+}
+
+.ca-card--compact {
+  padding: 16px;
+}
+
+.ca-card--large {
+  padding: 32px;
+}
+
+.ca-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.045);
+}

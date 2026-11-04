@@ -1,0 +1,65 @@
+
+:root {
+  /* Primary colours */
+  --color-white: #ffffff;
+  --color-black: #111111;
+
+  /* Grey palette */
+  --color-grey-50: #fafafa;
+  --color-grey-100: #f5f5f5;
+  --color-grey-200: #e5e5e5;
+  --color-grey-300: #d4d4d4;
+  --color-grey-500: #737373;
+  --color-grey-700: #404040;
+  --color-grey-900: #171717;
+
+  /* Backgrounds */
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-dark: #111111;
+
+  /* Text */
+  --text-primary: #111111;
+  --text-secondary: #737373;
+  --text-inverse: #ffffff;
+
+  /* Borders and shadows */
+  --border-light: #e5e5e5;
+  --border-medium: #d4d4d4;
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  /* Typography */
+  --font-primary: 'Inter', sans-serif;
+
+  /* Font sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 36px;
+  --text-3xl: 56px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Layout */
+  --container-width: 1280px;
+  --sidebar-width: 260px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}

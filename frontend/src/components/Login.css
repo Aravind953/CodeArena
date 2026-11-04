@@ -1,0 +1,299 @@
+
+.login-page {
+  min-height: 100vh;
+  background: #fff;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+.login-header {
+  height: 85px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+.login-logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.login-logo span {
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.login-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.login-back:hover {
+  color: #111;
+}
+
+/* Main */
+
+.login-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 65px 20px 35px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  animation: loginReveal 0.7s ease both;
+}
+
+.login-icon {
+  width: 55px;
+  height: 55px;
+  background: #111;
+  color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.login-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.login-card h1 {
+  margin-top: 13px;
+  font-size: clamp(38px, 5vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -2.5px;
+  font-weight: 800;
+}
+
+.login-card h1 span {
+  color: #888;
+}
+
+.login-description {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #737373;
+}
+
+/* Form */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-field label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.login-input-wrapper {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  border: 1px solid #dedede;
+  border-radius: 7px;
+  color: #888;
+  transition: border-color 0.2s ease;
+}
+
+.login-input-wrapper:focus-within {
+  border-color: #111;
+}
+
+.login-input-wrapper input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #111;
+  font-size: 14px;
+}
+
+.login-input-wrapper input::placeholder {
+  color: #aaa;
+}
+
+.login-password-toggle {
+  display: grid;
+  place-items: center;
+  border: none;
+  background: transparent;
+  color: #888;
+  padding: 4px;
+}
+
+.login-password-toggle:hover {
+  color: #111;
+}
+
+/* Message */
+
+.login-message {
+  padding: 12px 14px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #333;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Submit button */
+
+.login-submit {
+  height: 54px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #111;
+  color: white;
+  border: 1px solid #111;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.login-submit:hover:not(:disabled) {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.login-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Signup */
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 32px 0 18px;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.login-divider span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #999;
+}
+
+.login-signup {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  color: #111;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.login-signup:hover {
+  background: #f5f5f5;
+}
+
+/* Bottom */
+
+.login-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 65px;
+  color: #999;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Animation */
+
+@keyframes loginReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .login-header {
+    height: 70px;
+    padding: 0 6%;
+  }
+
+  .login-logo {
+    font-size: 19px;
+  }
+
+  .login-main {
+    padding: 55px 23px 30px;
+  }
+
+  .login-card h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .login-bottom {
+    gap: 15px;
+    font-size: 9px;
+    margin-top: 45px;
+  }
+}
