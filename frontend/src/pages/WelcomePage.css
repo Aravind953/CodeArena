@@ -1,0 +1,130 @@
+
+.welcome-page {
+  min-height: 100vh;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  color: #111111;
+}
+
+.welcome-header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.welcome-logo {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.welcome-logo span {
+  margin-right: 7px;
+}
+
+.welcome-version,
+.welcome-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #888888;
+}
+
+.welcome-content {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  padding: 90px 0;
+  animation: welcomeFade 0.8s ease both;
+}
+
+.welcome-content h1 {
+  margin: 25px 0;
+  font-size: clamp(58px, 9vw, 112px);
+  line-height: 0.98;
+  letter-spacing: -7px;
+  font-weight: 850;
+}
+
+.welcome-content h1 span {
+  color: #888888;
+}
+
+.welcome-content p {
+  margin-bottom: 35px;
+  color: #777777;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.welcome-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 35px;
+  padding: 19px 25px;
+  border: none;
+  border-radius: 6px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.welcome-button:hover {
+  background: #444444;
+  transform: translateY(-3px);
+}
+
+.welcome-footer {
+  min-height: 65px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #999999;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+@keyframes welcomeFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome-page {
+    padding: 0 6%;
+  }
+
+  .welcome-content h1 {
+    font-size: 64px;
+    letter-spacing: -4px;
+  }
+
+  .welcome-content p {
+    font-size: 16px;
+  }
+
+  .welcome-version {
+    font-size: 9px;
+  }
+
+  .welcome-footer {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}

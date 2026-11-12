@@ -9,6 +9,7 @@ import {
 
 import { supabase } from './supabase'
 
+import WelcomePage from './pages/WelcomePage'
 import HomePage from './pages/HomePage'
 import Signup from './components/Signup'
 import Login from './components/Login'
@@ -20,7 +21,6 @@ function App() {
 
   const navigate = useNavigate()
 
-  // Check existing login session and listen for auth changes
   useEffect(() => {
     let mounted = true
 
@@ -58,7 +58,6 @@ function App() {
     }
   }, [])
 
-  // Display loading screen while checking authentication
   if (loading) {
     return (
       <div className="app-loading">
@@ -71,9 +70,15 @@ function App() {
   return (
     <Routes>
 
-      {/* Landing Page */}
+      {/* Welcome Page */}
       <Route
         path="/"
+        element={<WelcomePage />}
+      />
+
+      {/* Existing Landing Page */}
+      <Route
+        path="/home"
         element={<HomePage />}
       />
 
