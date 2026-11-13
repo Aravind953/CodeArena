@@ -1,0 +1,262 @@
+
+.problem-details-page {
+  min-height: 100vh;
+  background: #f7f7f7;
+  color: #171717;
+  font-family: Arial, sans-serif;
+}
+
+.details-header {
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.details-back {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #333;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.details-brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.details-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 55px 30px;
+}
+
+.details-breadcrumb {
+  color: #999;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 35px;
+}
+
+.details-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.details-number {
+  color: #999;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.details-title-row h1 {
+  margin: 12px 0;
+  font-size: clamp(32px, 5vw, 46px);
+  letter-spacing: -1.8px;
+}
+
+.details-difficulty {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.details-difficulty.easy {
+  color: #39845c;
+}
+
+.details-difficulty.medium {
+  color: #ad7b28;
+}
+
+.details-difficulty.hard {
+  color: #c34e4e;
+}
+
+.details-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  border-bottom: 1px solid #e3e3e3;
+  color: #888;
+  font-size: 12px;
+}
+
+.details-section {
+  margin-top: 35px;
+}
+
+.details-section h2,
+.details-solve-area h2 {
+  margin-bottom: 17px;
+  font-size: 19px;
+  letter-spacing: -0.4px;
+}
+
+.details-section > p {
+  max-width: 800px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.example-card {
+  margin-top: 15px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+
+.example-card h3 {
+  margin: 0 0 15px;
+  font-size: 13px;
+}
+
+.example-content {
+  padding: 12px 15px;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.example-content p {
+  margin: 9px 0;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.example-content strong {
+  color: #171717;
+}
+
+.constraints-list {
+  display: grid;
+  gap: 13px;
+  padding: 0;
+  list-style: none;
+}
+
+.constraints-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #555;
+  font-size: 13px;
+}
+
+.constraints-list svg {
+  flex-shrink: 0;
+  color: #777;
+}
+
+.details-solve-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+}
+
+.details-solve-area h2 {
+  margin: 0 0 8px;
+}
+
+.details-solve-area p {
+  margin: 0;
+  color: #888;
+  font-size: 12px;
+}
+
+.details-solve-area button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 17px;
+  background: #171717;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.problem-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.problem-navigation a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.problem-navigation a:hover {
+  color: #000;
+}
+
+.problem-not-found {
+  padding: 80px 30px;
+  text-align: center;
+}
+
+.problem-not-found a {
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .details-header {
+    padding: 0 18px;
+  }
+
+  .details-container {
+    padding: 35px 18px;
+  }
+
+  .details-title-row {
+    align-items: flex-start;
+  }
+
+  .details-title-row h1 {
+    font-size: 32px;
+  }
+
+  .details-meta {
+    gap: 12px;
+  }
+
+  .details-solve-area {
+    align-items: flex-start;
+  }
+}

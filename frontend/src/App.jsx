@@ -14,6 +14,11 @@ import HomePage from './pages/HomePage'
 import Signup from './components/Signup'
 import Login from './components/Login'
 import Dashboard from './components/Dashboard'
+import ProblemsPage from './pages/ProblemsPage'
+import ProblemDetailsPage from './pages/ProblemDetailsPage'
+import CodingWorkspace from './pages/CodingWorkspace'
+import ContestsPage from './pages/ContestsPage'
+import ProfilePage from './pages/ProfilePage'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -131,8 +136,46 @@ function App() {
         path="*"
         element={<Navigate to="/" replace />}
       />
-
+      <Route
+  path="/problems"
+  element={
+    user ? (
+      <ProblemsPage />
+    ) : (
+      <Navigate to="/login" replace />
+    )
+  }
+/>
+<Route
+  path="/problems/:problemId/solve"
+  element={
+    user ? <CodingWorkspace /> : <Navigate to="/login" replace />
+  }
+/>    
+<Route
+  path="/contests"
+  element={
+    user ? <ContestsPage /> : <Navigate to="/login" replace />
+  }
+/>  
+<Route
+  path="/profile"
+  element={
+    user ? (
+      <ProfilePage user={user} />
+    ) : (
+      <Navigate to="/login" replace />
+    )
+  }
+/>
+<Route
+  path="/problems/:problemId"
+  element={
+    user ? <ProblemDetailsPage /> : <Navigate to="/login" replace />
+  }
+/>
     </Routes>
+
   )
 }
 
